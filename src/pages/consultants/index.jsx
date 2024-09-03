@@ -25,12 +25,12 @@ function Consultant() {
 
   return (
     <div className="px-4 py-6 md:px-8 lg:px-16 xl:px-32">
-      <div className="mb-8 flex items-center justify-between">
+      <div className="mb-8 flex flex-col items-start justify-between px-4 sm:px-6 md:flex-row md:items-center md:px-8">
         <BackButton />
-        <h1 className="font-Akshar text-4xl font-semibold text-primary-text lg:text-5xl">
+        <h1 className="font-Akshar text-3xl font-semibold text-primary-text lg:text-4xl xl:text-5xl">
           Book Appointment
         </h1>
-        <div />
+        <div className="hidden lg:block" />{" "}
       </div>
 
       <div className="flex flex-col gap-6 md:flex-row">

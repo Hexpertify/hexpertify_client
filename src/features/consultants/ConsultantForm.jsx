@@ -133,7 +133,7 @@ const ConsultantForm = ({ consultantDetails }) => {
                   id: consultantDetails?._id ?? "",
                   name: consultantDetails?.name ?? "",
                   base64: "",
-                  ratings: 0,
+                  ratings: consultantDetails?.ratings ?? 0,
                   imageURL: consultantDetails?.imageURL ?? "",
                   about: consultantDetails?.about ?? "",
                   experience: consultantDetails?.experience ?? {
