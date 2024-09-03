@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Alata&display=swap");
+:root {
+  --background-color: white;
+  --text-color: black;
+  --link-color: blue;
+  --active-color: #3a0ca3;
+  --primary-button-color: #ffd400;
+  --box-shadow: 4px 4px 6px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, Vertical offset, Blur radius, Color */
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Dark Mode - Based on class */
+body.dark-mode {
+  --background-color: black;
+  --text-color: white;
+  --link-color: lightblue;
+  --active-color: #3a0ca3;
+  --primary-button-color: #ffd400;
+  --box-shadow: 4px 4px 6px 4px rgba(255, 255, 255, 0.5); /* Horizontal offset, Vertical offset, Blur radius, Color */
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
