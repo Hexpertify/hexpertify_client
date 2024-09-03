@@ -19,3 +19,8 @@ export const googleLogin = async (dataObj) => {
   const { data } = await axiosInstance.post("google", dataObj);
   return data;
 };
+
+export const getTokens = async (dataObj) => {
+  const { data } = await axiosInstance.post("token", dataObj);
+  return data;
+};

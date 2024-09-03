@@ -50,6 +50,8 @@ const AppBar = () => {
 
   const handleSignOut = async () => {
     localStorage.removeItem("token");
+    localStorage.removeItem("isAdmin");
+    localStorage.removeItem("refreshToken");
     setIsAuthenticated(false);
     setToggleMenu(false);
   };

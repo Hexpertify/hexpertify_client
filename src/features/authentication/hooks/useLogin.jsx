@@ -13,6 +13,7 @@ function useLogin() {
     onSuccess: (data) => {
       localStorage.setItem("token", data?.token);
       localStorage.setItem("isAdmin", data?.role);
+      localStorage.setItem("refreshToken", data?.refreshToken);
       toast.success("Login successful");
       setIsAuthenticated(true);
       setIsAdmin(data?.role == "admin");
