@@ -4,6 +4,7 @@ import useAllUserBooking from "./hooks/useAllUserBooking";
 import Pagination from "../../components/Pagination";
 import Menu from "../../components/Menu";
 import useUpdateBookingStatus from "./hooks/useUpdateBookingStatus";
+import dayjs from "dayjs";
 
 const bookingStatus = {
   pending: "text-blue-500",
@@ -32,6 +33,18 @@ export default function AllUserBookingTable() {
   const columns = [
     { id: "1", title: "Name", key: "userName" },
     { id: "2", title: "Email", key: "userEmail" },
+    {
+      id: "7",
+      title: "Created At",
+      key: "createdAt",
+      cellRender: (item) => (
+        <span className={`font-semibold text-gray-500`}>
+          {dayjs(item?.createdAt).isValid()
+            ? dayjs(item?.createdAt).format("MMMM D, YYYY at h:mm A")
+            : "N/A"}
+        </span>
+      ),
+    },
     { id: "3", title: "Consultant Name", key: "consultantName" },
     { id: "4", title: "Service Name", key: "serviceName" },
     {

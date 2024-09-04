@@ -21,12 +21,16 @@ function ProfileCard() {
     <div className="mx-auto max-w-4xl overflow-hidden rounded-lg bg-white shadow-theme">
       <div className="p-6">
         <h1 className="mb-2 text-3xl font-bold text-gray-900">{name}</h1>
-        <p className="mb-2 text-sm text-gray-700">
-          Email: <span className="font-medium">{userEmail}</span>
-        </p>
-        <p className="mb-2 text-sm text-gray-700">
-          Phone: <span className="font-medium">{phoneNumber}</span>
-        </p>
+        {userEmail ? (
+          <p className="mb-2 text-sm text-gray-700">
+            Email: <span className="font-medium">{userEmail}</span>
+          </p>
+        ) : null}
+        {phoneNumber ? (
+          <p className="mb-2 text-sm text-gray-700">
+            Phone: <span className="font-medium">{phoneNumber}</span>
+          </p>
+        ) : null}
         {userName ? (
           <p className="text-sm text-gray-700">
             Username: <span className="font-medium">{userName}</span>
