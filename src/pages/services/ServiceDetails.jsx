@@ -71,7 +71,7 @@ function ServiceDetails() {
           <div className="col-span-2 mt-10 flex items-center justify-center">
             <Pagination
               currentPage={pagination?.page || 1}
-              totalPages={pagination?.totalPages || 10}
+              totalPages={pagination?.totalPages || 1}
               onPageChange={handlePageChange}
             />
           </div>

@@ -50,7 +50,7 @@ const ServicesContainer = () => {
       {Array.isArray(data) && (
         <Pagination
           currentPage={pagination?.page || 1}
-          totalPages={pagination?.totalPages || 10}
+          totalPages={pagination?.totalPages || 1}
           onPageChange={handlePageChange}
         />
       )}

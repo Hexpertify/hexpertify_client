@@ -157,7 +157,7 @@ export default function ConsultantTable({ serviceId, backToService }) {
 
           <Pagination
             currentPage={pagination?.page || 1}
-            totalPages={pagination?.totalPages || 10}
+            totalPages={pagination?.totalPages || 1}
             onPageChange={handlePageChange}
             className="mt-4 flex justify-end"
           />
