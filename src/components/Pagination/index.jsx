@@ -9,7 +9,12 @@ import {
   FaDotCircle,
 } from "react-icons/fa";
 
-const Pagination = ({ currentPage, totalPages, onPageChange, className }) => {
+const Pagination = ({
+  currentPage = 1,
+  totalPages = 0,
+  onPageChange,
+  className,
+}) => {
   const handlePageChange = (page) => {
     if (page >= 1 && page <= totalPages) {
       onPageChange(page);
