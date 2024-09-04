@@ -8,11 +8,11 @@ function AboutUs() {
         Welcome to HEXPERTIFY, your trusted partner in consultancy services.
       </h2>
       <p className="mb-4 text-base leading-relaxed lg:text-lg">
-        At HEXPERTIFY, we are committed to delivering exceptional consulting
-        services tailored to meet the unique needs of our clients. With a team
-        of experienced professionals and subject matter experts, we strive to
-        provide innovative solutions that drive growth and success for
-        businesses across various industries.
+        Hexpertify is a online Consultation platform where people can Consult
+        with Certified and Experienced Professionals across a wide range of
+        fields ranging from Healthcare to Fashion. In the world full of
+        misinformation Hexpertify serves people by making the process of finding
+        a Verified and Certified Professionals online.
       </p>
 
       <div className="mb-6 text-primary-text">
@@ -20,11 +20,10 @@ function AboutUs() {
           OUR MISSION
         </h3>
         <p className="text-base leading-relaxed lg:text-lg">
-          Our mission at HEXPERTIFY is to empower individuals and businesses
-          with strategic insights and expert guidance to navigate challenges,
-          seize opportunities, and achieve their goals. We are dedicated to
-          building long-lasting relationships with our clients based on trust,
-          integrity, and mutual success.
+          Hexpertify is on a Mission to destroy Misinformation , ensuring the
+          world never struggles to find certified Professionals across any
+          Sector.Also we wage War against the deception of Astrology, ensuring
+          that knowledge, not luck, shapes your future.
         </p>
       </div>
     </div>

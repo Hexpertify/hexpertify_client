@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+
 import Services from "../services";
+import { useAuthContext } from "../../contexts/AuthContext ";
 
 function Home() {
-  const isAuth = false;
+  const { isAuthenticated: isAuth } = useAuthContext();
   return (
     <div className="mx-auto mt-8 flex w-full justify-center px-4">
       <div className="mf:flex-row flex flex-col items-start justify-between px-2 md:p-20">
