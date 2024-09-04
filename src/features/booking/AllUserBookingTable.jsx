@@ -33,6 +33,7 @@ export default function AllUserBookingTable() {
   const columns = [
     { id: "1", title: "Name", key: "userName" },
     { id: "2", title: "Email", key: "userEmail" },
+    { id: "8", title: "Phone", key: "userPhoneNumber" },
     {
       id: "7",
       title: "Created At",

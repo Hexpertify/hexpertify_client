@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 
 import BackButton from "../../components/Button/BackButton";
@@ -6,6 +6,7 @@ import useServiceDetails from "./hooks/useConsultantDetails";
 import CertificatePopup from "../../features/consultants/CertificatePopup";
 import Modal from "../../components/Modal";
 import BookConsultant from "../../features/consultants/BookConsultant";
+import { useAuthContext } from "../../contexts/AuthContext ";
 
 function Consultant() {
   const { id: serviceId, consultantId } = useParams();
@@ -22,6 +23,7 @@ function Consultant() {
     certificationURL = "https://via.placeholder.com/150",
     experience: { year = 0, month = 0 } = {},
   } = data || {};
+  const { isAuthenticated } = useAuthContext();
 
   return (
     <div className="px-4 py-6 md:px-8 lg:px-16 xl:px-32">
@@ -50,10 +52,19 @@ function Consultant() {
               <p className="mb-2 text-2xl font-semibold text-primary-text">
                 Fees: ₹ {fees}
               </p>
-              <BookConsultant
-                consultantId={consultantId}
-                serviceId={serviceId}
-              />
+              {isAuthenticated ? (
+                <BookConsultant
+                  consultantId={consultantId}
+                  serviceId={serviceId}
+                />
+              ) : (
+                <Link
+                  className="rounded-lg bg-primary-button-color px-4 py-2 text-lg font-semibold text-white"
+                  to="/login"
+                >
+                  Login to book
+                </Link>
+              )}
             </div>
           </div>
         </div>
