@@ -13,9 +13,9 @@ const ServiceCard = ({ name, _id, imageURL }) => {
           />
         </div>
         <div className="flex flex-col justify-end bg-primary-active p-4 sm:p-6">
-          <h2 className="truncate text-lg font-bold text-white sm:text-xl md:text-2xl">
+          <h1 className="truncate text-3xl font-bold text-white transition-transform duration-300 hover:scale-105">
             {name}
-          </h2>
+          </h1>
         </div>
       </div>
     </Link>
