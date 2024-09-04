@@ -62,10 +62,11 @@ function ServiceDetails() {
             No consultants available for this service
           </p>
         )}
-
-        {data?.[0]?.consultants?.map((consultant) => (
-          <ConsultantCard key={consultant?._id} {...consultant} />
-        ))}
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
+          {data?.[0]?.consultants?.map((consultant) => (
+            <ConsultantCard key={consultant?._id} {...consultant} />
+          ))}
+        </div>
 
         {data?.[0]?.consultants?.length !== 0 && (
           <div className="col-span-2 mt-10 flex items-center justify-center">
