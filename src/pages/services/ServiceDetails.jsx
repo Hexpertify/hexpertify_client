@@ -29,31 +29,21 @@ function ServiceDetails() {
 
   return (
     <>
-      <div className="relative mt-5 px-[40px]">
+      <div className="relative mt-5 px-4">
         <BackButton />
-        {/* <div className="relative flex w-full justify-center">
-          <h1 className="absolute inset-0 m-auto flex h-32 w-64 items-center justify-center font-Akshar text-4xl font-semibold text-white sm:text-5xl md:text-6xl lg:text-7xl">
-            {data?.[0].name}
-          </h1>
-          <img
-            src={data?.[0].imageURL}
-            className="h-36 w-[90%] rounded-3xl object-cover object-center shadow-theme sm:h-48 md:h-60 lg:h-72 xl:h-80"
-            alt={data?.[0].name}
-          />
-        </div> */}
-        <div className="relative mb-6">
-          <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 p-4 text-center">
-            <h1 className="absolute inset-0 m-auto flex h-32 w-64 items-center justify-center font-Akshar text-4xl font-semibold text-white sm:text-5xl md:text-6xl lg:text-7xl">
+        <div className="relative mt-4 mb-6">
+          <div className="absolute inset-0 flex items-center justify-center rounded-3xl bg-black bg-opacity-50 p-4 text-center">
+            <h1 className="absolute inset-0 m-auto flex h-32 w-64 items-center justify-center rounded-3xl font-Akshar text-4xl font-semibold text-white sm:text-5xl md:text-6xl lg:text-7xl">
               {data?.[0].name}
             </h1>
           </div>
           <img
             src={data?.[0].imageURL}
             alt={data?.[0].name}
-            className="h-64 w-full rounded-lg object-cover"
+            className="aspect-video h-48 w-full rounded-3xl object-cover shadow-lg sm:h-64"
           />
         </div>
-        <h1 className="py-4 text-center font-Alata text-5xl font-normal">
+        <h1 className="py-4 text-start font-Alata text-2xl font-normal sm:text-center sm:text-5xl">
           Featured Professionals
         </h1>
 

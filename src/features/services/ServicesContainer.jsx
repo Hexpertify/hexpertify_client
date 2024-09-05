@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import Pagination from "../../components/Pagination";
 import Spinner from "../../components/Spinner";
 import useServiceList from "./hooks/useServiceList";
@@ -23,7 +22,7 @@ const ServicesContainer = () => {
 
   if (Array.isArray(data) && data.length === 0) {
     return (
-      <div className="flex min-h-[calc(100vh-15rem)] flex-col items-center justify-center p-6 text-center">
+      <div className="my-2 flex min-h-[calc(100vh-15rem)] flex-col items-center justify-center p-6 text-center">
         <h2 className="mb-4 text-2xl font-semibold text-gray-800">
           No Services Available
         </h2>
@@ -33,7 +32,7 @@ const ServicesContainer = () => {
         </p>
         <button
           className="mt-4 rounded-lg bg-blue-500 px-6 py-2 text-white shadow-md transition-colors duration-300 hover:bg-blue-600"
-          onClick={() => window.location.reload()} // Optional: Reloads the page
+          onClick={() => handlePageChange(1)} // Optional: Refresh by setting page to 1 or fetch data again
         >
           Refresh
         </button>
@@ -42,19 +41,24 @@ const ServicesContainer = () => {
   }
 
   return (
-    <>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
+    <div className="flex flex-col items-center justify-center px-2 sm:mt-[30px]">
+      <div className="gradient-cards">
         {Array.isArray(data) &&
-          data.map((service) => <ServiceCard key={service._id} {...service} />)}
+          data.map((service) => (
+            <ServiceCard key={service?._id} {...service} />
+          ))}
       </div>
+
       {Array.isArray(data) && (
-        <Pagination
-          currentPage={pagination?.page || 1}
-          totalPages={pagination?.totalPages || 1}
-          onPageChange={handlePageChange}
-        />
+        <div className="mt-4 flex items-center justify-center">
+          <Pagination
+            currentPage={pagination?.page || 1}
+            totalPages={pagination?.totalPages || 1}
+            onPageChange={handlePageChange}
+          />
+        </div>
       )}
-    </>
+    </div>
   );
 };
 

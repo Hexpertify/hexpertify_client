@@ -6,4 +6,5 @@ export const QUERY_KEYS = {
   ALL_BOOKING_LIST: "allBookingList",
   CONSULTANT_LIST: "consultantList",
   PROFILE: "profile",
+  BANNER: "banner",
 };

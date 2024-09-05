@@ -1,12 +1,10 @@
 import { Link, useParams } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 
+import { useAuthContext } from "../../contexts/AuthContext ";
 import BackButton from "../../components/Button/BackButton";
 import useServiceDetails from "./hooks/useConsultantDetails";
-import CertificatePopup from "../../features/consultants/CertificatePopup";
-import Modal from "../../components/Modal";
 import BookConsultant from "../../features/consultants/BookConsultant";
-import { useAuthContext } from "../../contexts/AuthContext ";
 
 function Consultant() {
   const { id: serviceId, consultantId } = useParams();
@@ -17,7 +15,6 @@ function Consultant() {
     ratings = 0,
     about = "About Consultant",
     imageURL = "https://via.placeholder.com/150",
-    languages = "English",
     isCertified = false,
     fees = 0,
     certificationURL = "https://via.placeholder.com/150",
@@ -26,30 +23,29 @@ function Consultant() {
   const { isAuthenticated } = useAuthContext();
 
   return (
-    <div className="px-4 py-6 md:px-8 lg:px-16 xl:px-32">
-      <div className="mb-8 flex flex-col items-start justify-between px-4 sm:px-6 md:flex-row md:items-center md:px-8">
+    <div className="px-4 md:px-6 lg:px-8 xl:px-12">
+      <div className="my-4 flex items-center gap-4 lg:gap-6">
         <BackButton />
-        <h1 className="font-Akshar text-3xl font-semibold text-primary-text lg:text-4xl xl:text-5xl">
+        <h1 className="text-2xl font-semibold text-primary-text md:text-3xl">
           Book Appointment
         </h1>
-        <div className="hidden lg:block" />{" "}
       </div>
 
-      <div className="flex flex-col gap-6 md:flex-row">
-        <div className="flex flex-1 flex-col items-center">
+      <div className="flex flex-col gap-6 sm:flex-row lg:gap-8">
+        <div className="flex w-full flex-col items-center sm:w-1/2 lg:w-1/3">
           <div className="relative w-full">
             {isCertified && (
-              <div className="absolute right-2 top-2 rounded-lg bg-primary-button-color px-2 py-1 text-sm font-medium text-white shadow-lg">
+              <div className="absolute right-4 top-4 rounded-lg bg-primary-button-color px-3 py-1 text-sm font-medium text-white shadow-md">
                 Certified
               </div>
             )}
             <img
-              className="h-72 w-full rounded-lg object-cover object-center shadow-lg"
+              className="h-64 w-full rounded-xl object-cover shadow-lg sm:h-80 md:h-96 lg:h-full"
               src={imageURL}
               alt={`Profile picture of ${name}`}
             />
-            <div className="mt-4 flex items-center justify-between">
-              <p className="mb-2 text-2xl font-semibold text-primary-text">
+            <div className="mt-5 hidden sm:flex sm:items-center sm:justify-between">
+              <p className="text-xl font-semibold text-primary-text md:text-2xl">
                 Fees: ₹ {fees}
               </p>
               {isAuthenticated ? (
@@ -59,57 +55,82 @@ function Consultant() {
                 />
               ) : (
                 <Link
-                  className="rounded-lg bg-primary-button-color px-4 py-2 text-lg font-semibold text-white"
+                  className="hover:bg-primary-button-hover rounded-lg bg-primary-button-color px-6 py-3 text-lg font-semibold text-white transition-colors duration-300"
                   to="/login"
                 >
                   Login to book
                 </Link>
               )}
             </div>
-          </div>
-        </div>
-
-        <div className="flex-1 rounded-lg bg-primary-background p-4 shadow-theme md:p-6">
-          <div className="mb-4 flex items-center justify-between">
-            <h2 className="text-2xl font-semibold text-primary-text">{name}</h2>
-            <div className="flex items-center gap-2 text-xl font-semibold text-primary-text">
-              <FaStar size={20} color="#FFD233" />
-              <p>{ratings}</p>
+            <div className="mt-4 flex flex-col gap-4 sm:hidden lg:flex-row lg:items-start lg:gap-8">
+              <div className="flex-1 text-left">
+                <h2 className="text-xl font-semibold text-primary-text md:text-2xl">
+                  {name}
+                </h2>
+                <p className="text-lg font-medium text-primary-text">
+                  {year} years {month} months Experience
+                </p>
+              </div>
+              <div className="flex items-center gap-3 text-xl font-semibold text-primary-text">
+                <FaStar size={32} color="#FFD233" />
+                <p className="text-3xl">{ratings}</p>
+              </div>
             </div>
           </div>
+        </div>
+        <div className="w-full sm:w-1/2 lg:w-2/3">
+          <div className="mt-4 hidden flex-col gap-4 sm:flex lg:flex-row lg:items-start lg:gap-8">
+            <div className="flex-1 text-left">
+              <h2 className="text-xl font-semibold text-primary-text md:text-2xl">
+                {name}
+              </h2>
+              <p className="text-lg font-medium text-primary-text">
+                {year} years {month} months Experience
+              </p>
+            </div>
+            <div className="flex items-center gap-3 text-xl font-semibold text-primary-text">
+              <FaStar size={32} color="#FFD233" />
+              <p className="text-3xl">{ratings}</p>
+            </div>
+          </div>
+          <div>
+            <h2 className="mb-2 text-xl font-semibold text-primary-text md:text-2xl">
+              About
+            </h2>
+            <p className="text-base text-primary-text">{about}</p>
+          </div>
 
-          <p className="mb-2 text-lg font-medium text-primary-text">
-            {year} years {month} months Experience
-          </p>
-          <label className="mb-1 block text-lg font-semibold text-primary-text">
-            About
-          </label>
-          <p className="mb-4 text-base text-primary-text">{about}</p>
+          {isCertified && (
+            <div className="mt-4">
+              <h2 className="mb-2 text-xl font-semibold text-primary-text md:text-2xl">
+                Certificate
+              </h2>
+              <img
+                className="h-60 w-full rounded-lg object-cover object-center shadow-md sm:h-full"
+                src={certificationURL}
+                alt="Certificate"
+              />
+            </div>
+          )}
 
-          <label className="mb-1 block text-lg font-semibold text-primary-text">
-            Languages
-          </label>
-          <p className="mb-4 text-base text-primary-text">{languages}</p>
-
-          <Modal>
-            {isCertified && (
-              <>
-                <Modal.Open opens="certificate">
-                  <p className="mb-1 cursor-pointer text-lg font-semibold text-primary-text">
-                    View the consultant&apos;s certification
-                  </p>
-                </Modal.Open>
-                <Modal.Window name="certificate">
-                  {({ onCloseModal }) => (
-                    <CertificatePopup
-                      imageURL={certificationURL}
-                      onCloseModal={onCloseModal}
-                    />
-                  )}
-                </Modal.Window>
-              </>
+          <div className="flex flex-col items-center gap-4 sm:hidden">
+            <p className="text-xl font-semibold text-primary-text md:text-2xl">
+              Fees: ₹ {fees}
+            </p>
+            {isAuthenticated ? (
+              <BookConsultant
+                consultantId={consultantId}
+                serviceId={serviceId}
+              />
+            ) : (
+              <Link
+                className="hover:bg-primary-button-hover rounded-lg bg-primary-button-color px-6 py-3 text-lg font-semibold text-white transition-colors duration-300"
+                to="/login"
+              >
+                Login to book
+              </Link>
             )}
-          </Modal>
+          </div>
         </div>
       </div>
     </div>

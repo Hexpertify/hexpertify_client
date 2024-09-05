@@ -3,6 +3,7 @@ import { useState } from "react";
 import Tabs from "../../components/Tabs";
 import AllUserBookingTable from "../../features/booking/AllUserBookingTable";
 import ServiceTable from "../../features/services/ServiceTable";
+import BannerForm from "../../features/profile/BannerForm";
 
 function AdminAccess() {
   const [activeTab, setActiveTab] = useState("Booking Table");
@@ -26,6 +27,7 @@ function AdminAccess() {
   return (
     <div className="space-y-6 p-4">
       <Tabs tabs={tabs} onActiveTab={handleTabChange} activeTab={activeTab} />
+      <BannerForm />
       <section className="rounded bg-white p-4 shadow-md">
         <h2 className="mb-4 text-xl font-semibold">
           {section[activeTab].title || null}

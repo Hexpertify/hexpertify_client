@@ -18,7 +18,10 @@ function BookConsultant({ consultantId, serviceId }) {
   return (
     <Modal>
       <Modal.Open opens="bookConsultant">
-        <Modal.Button title="  Book Appointment" className="w-fit" />
+        <Modal.Button
+          title="  Book Appointment"
+          className="w-fit !rounded-full"
+        />
       </Modal.Open>
       <Modal.Window name="bookConsultant">
         {({ onCloseModal }) => (
