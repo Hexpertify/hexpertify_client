@@ -2,7 +2,7 @@ import useGetBanner from "./hooks/useGetBanner";
 
 function BannerCard() {
   const { data } = useGetBanner();
-  const banner = data?.banner;
+  const banner = data?.bannerUrl;
   return (
     <div className="relative mb-6 px-2 sm:px-8">
       <div className="absolute inset-0 flex items-center justify-center rounded-3xl bg-opacity-50 p-4 text-center">
