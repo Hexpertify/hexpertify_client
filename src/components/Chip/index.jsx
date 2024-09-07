@@ -1,5 +1,3 @@
-import toast from "react-hot-toast";
-
 /* eslint-disable react/prop-types */
 const bookingStatus = {
   pending: {
@@ -19,8 +17,6 @@ const bookingStatus = {
     label: "Cancelled",
   },
 };
-toast.error("Error message");
-toast.success("Success message");
 const Chip = ({ status }) => {
   const { style, label } = bookingStatus[status] || {};
 
