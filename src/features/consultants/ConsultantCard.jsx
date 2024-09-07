@@ -64,10 +64,14 @@ function ConsultantCard({
               Languages: {languages}
             </p>
           </div>
+        </div>
+        <div className="flex items-center justify-between">
           <div>
             <span className="mx-2 font-Baloo text-lg font-semibold text-black sm:text-2xl">
               ₹ {fees}
             </span>
+          </div>
+          <div>
             <Button
               title="Consult Now"
               variant="primary"

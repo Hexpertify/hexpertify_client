@@ -16,7 +16,7 @@ export default function Table({ columns, rows }) {
   }
 
   return (
-    <div className="relative flex flex-col overflow-x-auto">
+    <div className="relative flex flex-col overflow-x-auto border border-gray-300">
       {/* <div className="sm:-mx-6 lg:-mx-8"> */}
       <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
         <div className="overflow-x-auto rounded-lg shadow-md">

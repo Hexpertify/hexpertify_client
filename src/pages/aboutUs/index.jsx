@@ -1,7 +1,7 @@
 function AboutUs() {
   return (
     <div className="container mx-auto mb-4 min-h-[calc(100vh-15rem)] px-4 py-8 text-primary-text">
-      <h1 className="text-primary border-primary mb-4 border-b-2 pb-2 text-3xl font-extrabold">
+      <h1 className="text-primary border-primary !mt-4 mb-4 border-b-2 pb-2 text-3xl font-extrabold">
         About Us
       </h1>
       <h2 className="mb-4 text-2xl font-semibold text-primary-text lg:text-3xl">

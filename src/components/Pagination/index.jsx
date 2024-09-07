@@ -54,7 +54,7 @@ const Pagination = ({
       <button
         onClick={() => handlePageChange(1)}
         disabled={currentPage === 1}
-        className="flex h-8 w-8 items-center justify-center rounded-full border border-transparent bg-blue-500 text-white disabled:bg-gray-400"
+        className="flex h-8 w-8 items-center justify-center rounded-full border border-transparent bg-primary-active text-white disabled:bg-gray-400"
         aria-label="First Page"
       >
         <FaFastBackward />
@@ -64,7 +64,7 @@ const Pagination = ({
       <button
         onClick={() => handlePageChange(currentPage - 1)}
         disabled={currentPage === 1}
-        className="flex h-8 w-8 items-center justify-center rounded-full border border-transparent bg-blue-500 text-white disabled:bg-gray-400"
+        className="flex h-8 w-8 items-center justify-center rounded-full border border-transparent bg-primary-active text-white disabled:bg-gray-400"
         aria-label="Previous Page"
       >
         <FaAngleLeft />
@@ -85,7 +85,7 @@ const Pagination = ({
             onClick={() => handlePageChange(page)}
             className={`flex h-8 w-8 items-center justify-center rounded-full ${
               currentPage === page
-                ? "bg-blue-500 text-white"
+                ? "bg-primary-active text-white"
                 : "bg-gray-200 text-gray-700 hover:bg-gray-300"
             }`}
           >
@@ -98,7 +98,7 @@ const Pagination = ({
       <button
         onClick={() => handlePageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
-        className="flex h-8 w-8 items-center justify-center rounded-full border border-transparent bg-blue-500 text-white disabled:bg-gray-400"
+        className="flex h-8 w-8 items-center justify-center rounded-full border border-transparent bg-primary-active text-white disabled:bg-gray-400"
         aria-label="Next Page"
       >
         <FaAngleRight />
@@ -108,7 +108,7 @@ const Pagination = ({
       <button
         onClick={() => handlePageChange(totalPages)}
         disabled={currentPage === totalPages}
-        className="flex h-8 w-8 items-center justify-center rounded-full border border-transparent bg-blue-500 text-white disabled:bg-gray-400"
+        className="flex h-8 w-8 items-center justify-center rounded-full border border-transparent bg-primary-active text-white disabled:bg-gray-400"
         aria-label="Last Page"
       >
         <FaFastForward />

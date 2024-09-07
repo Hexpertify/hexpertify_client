@@ -3,27 +3,27 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { QUERY_KEYS } from "../../../lib/tanstackQuery/queryKeys";
 import toast from "react-hot-toast";
 
-import { updateBanner } from "../../../lib/api/profile";
+import { updateProfile } from "../../../lib/api/profile";
 
-function useUpdateBanner() {
+function useUpdateMe() {
   const queryClient = useQueryClient();
 
   const mutation = useMutation({
-    mutationFn: (id) => updateBanner(id),
+    mutationFn: (dataObj) => updateProfile(dataObj),
     onSuccess: () => {
-      queryClient.invalidateQueries(QUERY_KEYS.BANNER);
-      toast.success("Banner updated Successfully");
+      queryClient.invalidateQueries(QUERY_KEYS.PROFILE);
+      toast.success("Profile updated Successfully");
     },
     onError: (error) => {
       console.log(error);
-      toast.error("Failed to updated Banner");
+      toast.error("Failed to updated Profile");
     },
   });
 
   return {
-    updateBannerAction: mutation.mutateAsync,
+    updateMeAction: mutation.mutateAsync,
     isloading: mutation.isPending,
   };
 }
 
-export default useUpdateBanner;
+export default useUpdateMe;

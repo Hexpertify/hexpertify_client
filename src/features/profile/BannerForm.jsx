@@ -54,10 +54,10 @@ const BannerForm = () => {
                       <ImageUploader
                         value={values?.bannerBase64}
                         onChangeImage={(value) =>
-                          setFieldValue("base64", value)
+                          setFieldValue("bannerBase64", value)
                         }
                       />
-                      {errors.base64 && touched.base64 ? (
+                      {errors.bannerBase64 && touched.bannerBase64 ? (
                         <span className="text-red-500">Image is required</span>
                       ) : null}
                     </div>

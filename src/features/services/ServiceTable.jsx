@@ -96,7 +96,7 @@ export default function ServiceTable() {
     openModal("serviceForm");
   };
   return (
-    <div className="App">
+    <div>
       {!isService ? (
         <ConsultantTable
           serviceId={serviceDetail?._id}
@@ -104,7 +104,7 @@ export default function ServiceTable() {
         />
       ) : (
         <>
-          <div className="flex justify-end">
+          <div className="flex justify-end py-4">
             <Button title="Create" handleClick={handleOpenServiceForm} />
             <ServiceForm serviceDetail={serviceDetail} />
           </div>

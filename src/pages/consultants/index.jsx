@@ -62,7 +62,7 @@ function Consultant() {
                 </Link>
               )}
             </div>
-            <div className="mt-4 flex flex-col gap-4 sm:hidden lg:flex-row lg:items-start lg:gap-8">
+            <div className="mt-4 flex gap-4 sm:hidden lg:items-start lg:gap-8">
               <div className="flex-1 text-left">
                 <h2 className="text-xl font-semibold text-primary-text md:text-2xl">
                   {name}
@@ -113,7 +113,7 @@ function Consultant() {
             </div>
           )}
 
-          <div className="flex flex-col items-center gap-4 sm:hidden">
+          <div className="mt-4 flex items-center justify-between gap-4 sm:hidden">
             <p className="text-xl font-semibold text-primary-text md:text-2xl">
               Fees: ₹ {fees}
             </p>

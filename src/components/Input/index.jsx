@@ -4,7 +4,8 @@ function Input({
   type,
   placeholder,
   value,
-  handleChange,
+  handleChange = () => {},
+  handleBlur = () => {},
   error,
   name,
   disabled,
@@ -25,6 +26,7 @@ function Input({
         placeholder={placeholder}
         value={value}
         onChange={handleChange}
+        onBlur={handleBlur}
         className={`block w-full rounded-md border px-4 py-3 placeholder-gray-500 shadow-sm transition duration-150 ease-in-out focus:outline-none focus:ring-2 ${
           error
             ? "border-red-400 text-red-900 placeholder-red-400 focus:ring-red-600"

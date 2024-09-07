@@ -12,7 +12,7 @@ function useGetBanner() {
   return {
     isPending,
     error,
-    data: data?.user,
+    data: data?.data,
   };
 }
 

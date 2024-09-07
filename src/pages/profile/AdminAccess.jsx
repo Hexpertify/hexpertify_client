@@ -25,9 +25,11 @@ function AdminAccess() {
     setActiveTab(tabId);
   };
   return (
-    <div className="space-y-6 p-4">
-      <Tabs tabs={tabs} onActiveTab={handleTabChange} activeTab={activeTab} />
-      <BannerForm />
+    <div className="space-y-6">
+      <div className="flex justify-between py-4">
+        <Tabs tabs={tabs} onActiveTab={handleTabChange} activeTab={activeTab} />
+        <BannerForm />
+      </div>
       <section className="rounded bg-white p-4 shadow-md">
         <h2 className="mb-4 text-xl font-semibold">
           {section[activeTab].title || null}

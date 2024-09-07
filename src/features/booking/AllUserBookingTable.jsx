@@ -5,13 +5,7 @@ import Pagination from "../../components/Pagination";
 import Menu from "../../components/Menu";
 import useUpdateBookingStatus from "./hooks/useUpdateBookingStatus";
 import dayjs from "dayjs";
-
-const bookingStatus = {
-  pending: "text-blue-500",
-  completed: "text-green-500",
-  onprogress: "text-orange-500",
-  cancelled: "text-red-500",
-};
+import Chip from "../../components/Chip";
 
 const menuItems = {
   onprogress: [{ label: "Completed" }, { label: "Cancel" }],
@@ -52,13 +46,7 @@ export default function AllUserBookingTable() {
       id: "5",
       title: "Status",
       key: "bookingStatus",
-      cellRender: (item) => (
-        <span
-          className={`font-semibold ${bookingStatus[item?.bookingStatus] || "text-gray-500"}`}
-        >
-          {item?.bookingStatus}
-        </span>
-      ),
+      cellRender: (item) => <Chip status={item?.bookingStatus ?? ""} />,
     },
     {
       id: "6",

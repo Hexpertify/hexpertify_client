@@ -32,7 +32,7 @@ function BookConsultant({ consultantId, serviceId }) {
             <p className="text-primary-text">
               Are you sure you want to Book the consultant?
             </p>
-            <div className="flex gap-3">
+            <div className="mt-2 flex gap-3">
               <Button
                 title={isloading ? "Booking..." : "Yes, Book"}
                 handleClick={() =>
