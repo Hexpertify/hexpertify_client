@@ -34,9 +34,9 @@ const BannerForm = () => {
       </Modal.Open>
       <Modal.Window name="uploadBanner">
         {({ onCloseModal }) => (
-          <div className="flex items-center justify-center bg-primary-background p-4">
-            <div className="w-full max-w-lg rounded-lg bg-primary-background">
-              <h2 className="font-B mb-2 font-Baloo text-xl font-normal text-black sm:text-2xl md:text-3xl lg:text-4xl">
+          <div className="flex items-center justify-center bg-primary-background p-4 dark:bg-transparent">
+            <div className="w-full max-w-lg rounded-lg">
+              <h2 className="font-B mb-2 font-Baloo text-xl font-normal text-black sm:text-2xl md:text-3xl lg:text-4xl dark:text-white">
                 Upload banner
               </h2>
 
@@ -58,7 +58,9 @@ const BannerForm = () => {
                         }
                       />
                       {errors.bannerBase64 && touched.bannerBase64 ? (
-                        <span className="text-red-500">Image is required</span>
+                        <span className="text-red-500 dark:text-red-400">
+                          Image is required
+                        </span>
                       ) : null}
                     </div>
                     <div className="flex gap-4">
@@ -66,7 +68,7 @@ const BannerForm = () => {
                         type="submit"
                         disabled={isloading}
                         title="Upload"
-                        className="bg-primary hover:bg-primary-dark focus:ring-primary-500 !w-fit rounded-md px-4 py-2 font-semibold text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-opacity-50"
+                        className="bg-primary dark:bg-primary-dark hover:bg-primary-dark dark:hover:bg-primary-darker focus:ring-primary-500 dark:focus:ring-primary-400 !w-fit rounded-md px-4 py-2 font-semibold text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-opacity-50 dark:text-gray-300"
                       />
                       <Modal.Close>
                         <Modal.Button variant="cancel" title="No, Close" />

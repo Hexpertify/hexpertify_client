@@ -30,12 +30,10 @@ function AdminAccess() {
         <Tabs tabs={tabs} onActiveTab={handleTabChange} activeTab={activeTab} />
         <BannerForm />
       </div>
-      <section className="rounded bg-white p-4 shadow-md">
-        <h2 className="mb-4 text-xl font-semibold">
-          {section[activeTab].title || null}
-        </h2>
-        {section[activeTab].component || null}
-      </section>
+      <h2 className="mb-4 text-xl font-semibold">
+        {section[activeTab].title || null}
+      </h2>
+      {section[activeTab].component || null}
     </div>
   );
 }

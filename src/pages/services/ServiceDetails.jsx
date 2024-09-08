@@ -31,7 +31,7 @@ function ServiceDetails() {
     <>
       <div className="relative mt-5 px-4">
         <BackButton />
-        <div className="relative mt-4 mb-6">
+        <div className="relative mb-6 mt-4">
           <div className="absolute inset-0 flex items-center justify-center rounded-3xl bg-black bg-opacity-50 p-4 text-center">
             <h1 className="absolute inset-0 m-auto flex h-32 w-64 items-center justify-center rounded-3xl font-Akshar text-4xl font-semibold text-white sm:text-5xl md:text-6xl lg:text-7xl">
               {data?.[0].name}
@@ -44,7 +44,7 @@ function ServiceDetails() {
           />
         </div>
         <h1 className="py-4 text-start font-Alata text-2xl font-normal sm:text-center sm:text-5xl">
-          Featured Professionals
+          Featured Consultants
         </h1>
 
         {data?.[0]?.consultants?.length === 0 && (

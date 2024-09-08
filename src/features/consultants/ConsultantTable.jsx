@@ -32,7 +32,9 @@ export default function ConsultantTable({ serviceId, backToService }) {
       title: "Name",
       key: "name",
       cellRender: (item) => (
-        <span className="font-semibold text-gray-800">{item?.name}</span>
+        <span className="font-semibold text-gray-800 dark:text-gray-200">
+          {item?.name}
+        </span>
       ),
     },
     {
@@ -40,7 +42,7 @@ export default function ConsultantTable({ serviceId, backToService }) {
       title: "Experience",
       key: "experience",
       cellRender: (item) => (
-        <span className="text-gray-600">
+        <span className="text-gray-600 dark:text-gray-400">
           {item?.experience?.year} years {item?.experience?.month} months
         </span>
       ),
@@ -50,7 +52,7 @@ export default function ConsultantTable({ serviceId, backToService }) {
       title: "Ratings",
       key: "ratings",
       cellRender: (item) => (
-        <span className="text-lg text-yellow-500">
+        <span className="text-lg text-yellow-500 dark:text-yellow-300">
           {"★".repeat(item?.ratings)}
         </span>
       ),
@@ -60,7 +62,9 @@ export default function ConsultantTable({ serviceId, backToService }) {
       title: "Languages",
       key: "languages",
       cellRender: (item) => (
-        <span className="text-gray-600">{item?.languages?.join(", ")}</span>
+        <span className="text-gray-600 dark:text-gray-400">
+          {item?.languages?.join(", ")}
+        </span>
       ),
     },
     {
@@ -68,7 +72,9 @@ export default function ConsultantTable({ serviceId, backToService }) {
       title: "Fees",
       key: "fees",
       cellRender: (item) => (
-        <span className="font-medium text-blue-600">₹{item?.fees}</span>
+        <span className="font-medium text-blue-600 dark:text-blue-400">
+          ₹{item?.fees}
+        </span>
       ),
     },
     {
@@ -77,9 +83,13 @@ export default function ConsultantTable({ serviceId, backToService }) {
       key: "isCertified",
       cellRender: (item) =>
         item?.isCertified ? (
-          <span className="font-semibold text-green-600">Yes</span>
+          <span className="font-semibold text-green-600 dark:text-green-400">
+            Yes
+          </span>
         ) : (
-          <span className="font-semibold text-red-600">No</span>
+          <span className="font-semibold text-red-600 dark:text-red-400">
+            No
+          </span>
         ),
     },
     {
@@ -115,10 +125,10 @@ export default function ConsultantTable({ serviceId, backToService }) {
   };
 
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-6 dark:text-gray-100">
       {isPending ? (
         <div className="flex h-64 items-center justify-center rounded-lg bg-gray-100 shadow-md">
-          <span className="text-gray-500">Loading...</span>
+          <span className="text-gray-500 dark:text-gray-400">Loading...</span>
         </div>
       ) : (
         <>
@@ -127,12 +137,14 @@ export default function ConsultantTable({ serviceId, backToService }) {
           <div className="mb-6 flex items-center justify-between">
             <span
               onClick={backToService}
-              className="inline-flex cursor-pointer items-center text-lg font-medium text-primary-text"
+              className="dark:text-primary-text-dark inline-flex cursor-pointer items-center text-lg font-medium text-primary-text"
             >
               <IoCaretBackOutline className="mr-2" />
               Back
             </span>
-            <h1 className="text-3xl font-bold text-gray-800">Consultant</h1>
+            <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-200">
+              Consultant
+            </h1>
             <Button title="Create" handleClick={handleOpenConsultantForm} />
           </div>
 

@@ -121,9 +121,9 @@ const ConsultantForm = ({ consultantDetails }) => {
     <Modal>
       <Modal.Window name="consultantForm">
         {({ onCloseModal }) => (
-          <div className="flex items-center justify-center overflow-auto p-4">
-            <div className="w-full max-w-3xl rounded-lg bg-white">
-              <h2 className="mb-4 text-2xl font-semibold">
+          <div className="flex items-center justify-center bg-gray-100 p-4 dark:bg-transparent">
+            <div className="w-full max-w-3xl rounded-lg">
+              <h2 className="mb-4 text-2xl font-semibold text-gray-900 dark:text-white">
                 {!isUpdate ? "Create Consultant" : "Update Consultant"}
               </h2>
 
@@ -174,6 +174,7 @@ const ConsultantForm = ({ consultantDetails }) => {
                             error={
                               errors.name && touched.name ? errors.name : ""
                             }
+                            className="bg-white text-gray-900 dark:bg-gray-700 dark:text-gray-200"
                           />
                         </div>
                         <div className="mb-4">
@@ -189,6 +190,7 @@ const ConsultantForm = ({ consultantDetails }) => {
                             error={
                               errors.about && touched.about ? errors.about : ""
                             }
+                            className="bg-white text-gray-900 dark:bg-gray-700 dark:text-gray-200"
                           />
                         </div>
                         <div>
@@ -206,6 +208,7 @@ const ConsultantForm = ({ consultantDetails }) => {
                             placeholder="languages"
                             disabled={isLoading}
                             label="languages"
+                            className="bg-white text-gray-900 dark:bg-gray-700 dark:text-gray-200"
                           />
                         </div>
                         <div className="mb-4">
@@ -221,12 +224,14 @@ const ConsultantForm = ({ consultantDetails }) => {
                             error={
                               errors.fees && touched.fees ? errors.fees : ""
                             }
+                            className="bg-white text-gray-900 dark:bg-gray-700 dark:text-gray-200"
                           />
                         </div>
                         <div className="mb-4">
                           <StarRating
                             rating={values?.ratings}
                             onChange={(val) => setFieldValue("ratings", val)}
+                            className="text-gray-900 dark:text-gray-200"
                           />
                         </div>
                         <div className="mb-4 flex flex-col gap-3 sm:flex-row">
@@ -245,6 +250,7 @@ const ConsultantForm = ({ consultantDetails }) => {
                                 ? errors.experience.year
                                 : ""
                             }
+                            className="bg-white text-gray-900 dark:bg-gray-700 dark:text-gray-200"
                           />
                           <Input
                             name="experience.month"
@@ -261,6 +267,7 @@ const ConsultantForm = ({ consultantDetails }) => {
                                 ? errors.experience.month
                                 : ""
                             }
+                            className="bg-white text-gray-900 dark:bg-gray-700 dark:text-gray-200"
                           />
                         </div>
                         <div className="flex justify-end gap-4">
@@ -286,7 +293,7 @@ const ConsultantForm = ({ consultantDetails }) => {
                             label="Profile Image"
                           />
                           {errors.base64 && touched.base64 ? (
-                            <span className="text-red-500">
+                            <span className="text-red-500 dark:text-red-400">
                               Image is required
                             </span>
                           ) : null}
@@ -300,6 +307,7 @@ const ConsultantForm = ({ consultantDetails }) => {
                               setFieldValue("isCertified", !values.isCertified)
                             }
                             label="Certified"
+                            className="text-gray-900 dark:text-gray-200"
                           />
                           {values.isCertified && (
                             <div className="mt-4">
@@ -315,7 +323,7 @@ const ConsultantForm = ({ consultantDetails }) => {
                               />
                               {errors.certificationBase64 &&
                               touched.certificationBase64 ? (
-                                <span className="text-red-500">
+                                <span className="text-red-500 dark:text-red-400">
                                   Certification image is required
                                 </span>
                               ) : null}

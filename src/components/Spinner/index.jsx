@@ -2,7 +2,7 @@ export default function Spinner() {
   return (
     <div className="hide-scrollbar grid min-h-[140px] w-full place-items-center overflow-x-scroll rounded-lg p-6 lg:overflow-visible">
       <svg
-        className="h-16 w-16 animate-spin text-gray-900/50"
+        className="h-16 w-16 animate-spin text-gray-900 dark:text-gray-300"
         viewBox="0 0 64 64"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +22,7 @@ export default function Spinner() {
           strokeWidth="5"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="text-gray-900"
+          className="text-gray-900 dark:text-gray-300"
         ></path>
       </svg>
     </div>
