@@ -29,7 +29,7 @@ export const LoginForm = () => {
           validationSchema={loginSchema}
           onSubmit={loginAction}
         >
-          {({ errors, touched, handleChange }) => (
+          {({ errors, touched, values, handleChange }) => (
             <Form>
               <div className="mb-4">
                 <Input
@@ -39,6 +39,7 @@ export const LoginForm = () => {
                   type="text"
                   placeholder="Username or Email"
                   handleChange={handleChange}
+                  value={values?.identifier}
                   error={
                     errors.identifier && touched.identifier
                       ? errors.identifier
@@ -55,6 +56,7 @@ export const LoginForm = () => {
                   label="Password"
                   type="password"
                   handleChange={handleChange}
+                  value={values?.password}
                   error={
                     errors.password && touched.password ? errors.password : ""
                   }

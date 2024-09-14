@@ -84,6 +84,7 @@ const ServiceForm = ({ serviceDetail }) => {
                   handleChange,
                   handleBlur,
                   setFieldValue,
+                  isSubmitting,
                 }) => (
                   <Form>
                     <div className="mb-4">
@@ -115,15 +116,15 @@ const ServiceForm = ({ serviceDetail }) => {
                     <div className="flex gap-4">
                       <Button
                         type="submit"
-                        disabled={isLoading}
+                        disabled={isSubmitting}
                         title={!isUpdate ? "Create" : "Update"}
-                        className="w-full rounded-md px-4 py-2 font-semibold text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-opacity-50"
+                        className="w-full"
                       />
                       <Modal.Close>
                         <Modal.Button
                           variant="cancel"
                           title="Cancel"
-                          className="text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-300"
+                          className="dark:text-gray-400 dark:hover:text-gray-300"
                         />
                       </Modal.Close>
                     </div>

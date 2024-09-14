@@ -77,7 +77,7 @@ export const SignupForm = () => {
           validationSchema={signupSchema}
           onSubmit={signupAction}
         >
-          {({ errors, touched, handleChange, handleBlur }) => (
+          {({ errors, touched, values, handleChange, handleBlur }) => (
             <Form>
               <div className="mb-4">
                 <Input
@@ -88,6 +88,7 @@ export const SignupForm = () => {
                   placeholder="Username"
                   handleChange={handleChange}
                   handleBlur={handleBlur}
+                  value={values?.username}
                   error={
                     errors.username && touched.username ? errors.username : ""
                   }
@@ -102,6 +103,7 @@ export const SignupForm = () => {
                   placeholder="Full Name"
                   handleChange={handleChange}
                   handleBlur={handleBlur}
+                  value={values?.name}
                   error={errors.name && touched.name ? errors.name : ""}
                 />
               </div>
@@ -114,6 +116,7 @@ export const SignupForm = () => {
                   placeholder="Phone Number"
                   handleChange={handleChange}
                   handleBlur={handleBlur}
+                  value={values?.phoneNumber}
                   error={
                     errors.phoneNumber && touched.phoneNumber
                       ? errors.phoneNumber
@@ -130,6 +133,7 @@ export const SignupForm = () => {
                   placeholder="Email"
                   handleChange={handleChange}
                   handleBlur={handleBlur}
+                  value={values?.email}
                   error={errors.email && touched.email ? errors.email : ""}
                 />
               </div>
@@ -142,6 +146,7 @@ export const SignupForm = () => {
                   placeholder="Password"
                   handleChange={handleChange}
                   handleBlur={handleBlur}
+                  value={values?.password}
                   error={
                     errors.password && touched.password ? errors.password : ""
                   }
