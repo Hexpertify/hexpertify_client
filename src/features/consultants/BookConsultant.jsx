@@ -19,8 +19,8 @@ function BookConsultant({ consultantId, serviceId }) {
     <Modal>
       <Modal.Open opens="bookConsultant">
         <Modal.Button
-          title="  Book Appointment"
-          className="w-fit !rounded-full"
+          title="Book Appointment"
+          className="sm:w-fit w-full !rounded-full"
         />
       </Modal.Open>
       <Modal.Window name="bookConsultant">

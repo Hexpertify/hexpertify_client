@@ -35,7 +35,9 @@ const consultantSchema = Yup.object().shape({
     .of(Yup.string().required())
     .required("Languages are required")
     .min(1),
-  fees: Yup.number().required("Fees are required").positive(),
+  fees: Yup.number()
+    .required("Fees are required")
+    .min(0, "Fees must be 0 or greater"),
   ratings: Yup.number()
     .required("Ratings are required")
     .min(0, "Ratings must be at least 0")

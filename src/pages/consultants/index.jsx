@@ -46,7 +46,7 @@ function Consultant() {
             />
             <div className="mt-5 hidden sm:flex sm:items-center sm:justify-between">
               <p className="text-xl font-semibold text-primary-text md:text-2xl">
-                Fees: ₹ {fees}
+              Fees: {fees == 0 ? "Free" : `₹${fees}`}
               </p>
               {isAuthenticated ? (
                 <BookConsultant
@@ -113,9 +113,9 @@ function Consultant() {
             </div>
           )}
 
-          <div className="mt-4 flex items-center justify-between gap-4 sm:hidden">
+          <div className="mt-4 flex items-start justify-between flex-col gap-4 sm:hidden">
             <p className="text-xl font-semibold text-primary-text md:text-2xl">
-              Fees: ₹ {fees}
+              Fees: {fees == 0 ? "Free" : `₹${fees}`}
             </p>
             {isAuthenticated ? (
               <BookConsultant

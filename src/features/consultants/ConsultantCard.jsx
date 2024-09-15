@@ -68,7 +68,7 @@ function ConsultantCard({
         <div className="flex items-center justify-between">
           <div>
             <span className="mx-2 font-Baloo text-lg font-semibold text-black sm:text-2xl">
-              ₹ {fees}
+              {fees == 0 ? "Free" : `₹${fees}`}
             </span>
           </div>
           <div>

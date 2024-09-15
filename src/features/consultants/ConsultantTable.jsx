@@ -73,7 +73,7 @@ export default function ConsultantTable({ serviceId, backToService }) {
       key: "fees",
       cellRender: (item) => (
         <span className="font-medium text-blue-600 dark:text-blue-400">
-          ₹{item?.fees}
+          {item?.fees ==0 ?"Free": `₹${item?.fees}`}  
         </span>
       ),
     },
