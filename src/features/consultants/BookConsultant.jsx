@@ -20,7 +20,7 @@ function BookConsultant({ consultantId, serviceId }) {
       <Modal.Open opens="bookConsultant">
         <Modal.Button
           title="Book Appointment"
-          className="sm:w-fit w-full !rounded-full"
+          className="!sm:py-2 w-full !rounded-full !py-3 !text-xl sm:w-fit"
         />
       </Modal.Open>
       <Modal.Window name="bookConsultant">
