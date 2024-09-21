@@ -20,7 +20,7 @@ export const LoginForm = () => {
 
   return (
     <div className="flex items-center justify-center bg-primary-background p-4">
-      <div className="w-full max-w-lg rounded-lg bg-primary-background p-8">
+      <div className="w-full max-w-lg rounded-lg bg-primary-background py-8">
         <Formik
           initialValues={{
             identifier: "",
