@@ -18,7 +18,7 @@ import TextArea from "../../components/Input/TextArea";
 // Validation schema
 const consultantSchema = Yup.object().shape({
   name: Yup.string().required("Name is required").min(2).max(50),
-  about: Yup.string().required("About is required").min(2).max(300),
+  about: Yup.string().required("About is required").min(2).max(1000),
   experience: Yup.object()
     .shape({
       year: Yup.number()
