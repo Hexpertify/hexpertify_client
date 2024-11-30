@@ -110,7 +110,7 @@ const AppBar = () => {
             {/* <div className="fixed inset-0 bg-black/40" aria-hidden="true"></div> */}
             <ul
               ref={ref}
-              className="animate-slide-in fixed right-0 top-0 z-50 flex h-screen w-3/4 max-w-md flex-grow flex-col items-end justify-start bg-primary-background text-primary-text shadow-lg backdrop-blur-md md:hidden"
+              className="animate-slide-in fixed right-0 top-0 z-50 flex h-screen w-2/4 max-w-md flex-grow flex-col items-end justify-start bg-primary-background text-primary-text shadow-lg backdrop-blur-md md:hidden"
             >
               <li className="w-full p-3 text-right">
                 <AiOutlineClose
