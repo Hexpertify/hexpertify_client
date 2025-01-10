@@ -5,10 +5,7 @@ import Spinner from "../../components/Spinner";
 import BackButton from "../../components/Button/BackButton";
 import Pagination from "../../components/Pagination";
 import { useState } from "react";
-import ReactMarkdown from 'react-markdown';
-import rehypeHighlight from 'rehype-highlight';
-import { unified } from 'unified';
-import rehypeParse from 'rehype-parse';
+import MarkdownViewer from "../../components/MarkdownViewer";
 
 
 function ServiceDetails() {
@@ -77,8 +74,7 @@ function ServiceDetails() {
         )}
       </div>
 <div className="px-2 py-4">
-  <ReactMarkdown remarkPlugins={[]}
-      rehypePlugins={[rehypeHighlight]}>{data?.[0]?.screenDescription}</ReactMarkdown>
+  <MarkdownViewer content={data?.[0]?.screenDescription} />
 </div>
     </>
   );
