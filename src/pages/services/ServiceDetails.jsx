@@ -5,6 +5,8 @@ import Spinner from "../../components/Spinner";
 import BackButton from "../../components/Button/BackButton";
 import Pagination from "../../components/Pagination";
 import { useState } from "react";
+import ReactMarkdown from 'react-markdown';
+
 
 function ServiceDetails() {
   const { id } = useParams();
@@ -68,6 +70,8 @@ function ServiceDetails() {
           </div>
         )}
       </div>
+  <ReactMarkdown>{data?.[0]?.screenDescription}</ReactMarkdown>
+
     </>
   );
 }
