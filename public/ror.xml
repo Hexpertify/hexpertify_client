@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://hexpertify.com/</title>
+  <link>https://hexpertify.com/</link>
+
+<item>
+     <link>https://hexpertify.com/</link>
+     <title>Hexpertify</title>
+     <description>Hexpertify is an Online Consultation Platform to Consult Certified Experts from various fields ranging from Healthcare to Fashion.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
