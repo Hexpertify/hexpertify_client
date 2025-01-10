@@ -12,6 +12,7 @@
   "dependencies": {
     "@tanstack/react-query": "^5.53.1",
     "@tanstack/react-query-devtools": "^5.53.1",
+    "react-markdown": "^8.0.7",
     "axios": "^1.7.6",
     "dayjs": "^1.11.13",
     "firebase": "^10.13.1",
