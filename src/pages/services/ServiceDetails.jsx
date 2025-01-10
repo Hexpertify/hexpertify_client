@@ -70,8 +70,9 @@ function ServiceDetails() {
           </div>
         )}
       </div>
+<div className="px-2 py-4">
   <ReactMarkdown>{data?.[0]?.screenDescription}</ReactMarkdown>
-
+</div>
     </>
   );
 }
