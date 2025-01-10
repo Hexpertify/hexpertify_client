@@ -5,6 +5,8 @@ import { router } from "./routes";
 import AuthProvider from "./contexts/AuthContext ";
 import Notification from "./components/notification";
 
+import 'highlight.js/styles/default.css';
+
 function App() {
   return (
     <AuthProvider>
