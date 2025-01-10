@@ -11,9 +11,6 @@ import MarkdownViewer from "../../components/MarkdownViewer";
 function ServiceDetails() {
   const { id } = useParams();
   const [currentPage, setCurrentPage] = useState(1);
-  const processor = unified()
-    .use(rehypeParse, { fragment: true }) 
-    .use(rehypeHighlight); 
 
   const { data, isPending, pagination } = useServiceDetails({
     id,
