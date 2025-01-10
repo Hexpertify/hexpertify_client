@@ -8,7 +8,7 @@ interface MarkdownViewerProps {
   content: string;
 }
 
-export const MarkdownViewer: React.FC<MarkdownViewerProps> = ({ content }) => {
+ const MarkdownViewer: React.FC<MarkdownViewerProps> = ({ content }) => {
   return (
     <div className="markdown-viewer prose dark:prose-invert max-w-none">
       <ReactMarkdown
@@ -65,3 +65,4 @@ export const MarkdownViewer: React.FC<MarkdownViewerProps> = ({ content }) => {
   );
 };
 
+export default MarkdownViewer;
