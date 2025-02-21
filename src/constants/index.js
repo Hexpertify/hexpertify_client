@@ -37,4 +37,17 @@ export const sidebarToggle = [
   },
 ];
 
+export const footerLinks=[
+
+  {
+    route:"terms-and-condition",
+    label:"Terms And Condition"
+  },
+  {
+    route:"privacy-and-refund-policy",
+    label:"Privacy And Refund Policy"
+  },
+
+]
+
 export const sidebarTitle = "HEXPERTIFY";

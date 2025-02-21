@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 // eslint-disable-next-line react/prop-types
 const ServiceCard = ({ name, _id, imageURL }) => {
   return (
-    <Link to={`/services/${_id}`}>
+    <Link to={`/services/${name.toLowerCase().replace(/ /g, "-")}/${_id}`}>
       <div className="container-card !w-full rounded-lg bg-primary-active">
         <div>
           <img
