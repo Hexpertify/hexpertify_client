@@ -72,12 +72,12 @@ function Footer() {
 
         {/* Footer Links moved to the bottom */}
         <div className="mt-6 flex flex-col items-center">
-          <ul className="flex flex-col items-center gap-2 text-sm font-medium text-gray-500 dark:text-gray-400 sm:flex-row sm:gap-6">
+          <ul className="flex flex-col items-center gap-2 text-sm font-medium  sm:flex-row sm:gap-6">
             {footerLinks.map((link) => (
               <li key={link.route}>
                 <Link
                   to={`/${link.route}`}
-                  className="block text-primary dark:text-primary-light hover:underline transition duration-300"
+                  className="block  hover:underline transition duration-300"
                 >
                   {link.label}
                 </Link>
