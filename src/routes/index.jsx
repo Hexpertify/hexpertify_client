@@ -11,6 +11,9 @@ import Signup from "../pages/authentication/signup";
 import Login from "../pages/authentication/login";
 import Profile from "../pages/profile";
 import ProtectedRoute from "../components/ProtectedRoute";
+import PrivacyAndRefundPolicy from "../pages/privacyPolicy";
+import TermsAndCondition from "../pages/termsAndCondition";
+import ComingSoon from "../pages/comingSoon";
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +23,10 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path:"coming-soon",
+        element:<ComingSoon/>
       },
       {
         path: "/about-us",
@@ -34,7 +41,15 @@ export const router = createBrowserRouter([
         element: <Services />,
       },
       {
-        path: "services/:id",
+        path:'privacy-and-refund-policy',
+        element:<PrivacyAndRefundPolicy/>
+      },
+      {
+        path:"terms-and-condition",
+        element:<TermsAndCondition/>
+      },
+      {
+        path: "services/:serviceName/:id",
         element: <ServiceDetails />,
       },
       {
