@@ -6,7 +6,7 @@ function Footer() {
   const links=["services","coming-soon","services/campus-&-corporate-webinars/67a0dc9f133acb3735f0deff"]
 
   return (
-    <footer className="text-white shadow-lg mt-7 bg-gradient-to-r from-blue-500 via-teal-500 to-indigo-500 text-white">
+    <footer className="text-white shadow-lg mt-7 bg-primary-active">
       <div className="mx-auto w-full max-w-screen-xl p-6 md:py-10">
         <div className="sm:flex sm:items-center sm:justify-between">
           {/* Left Side - Company Name and Logo */}
