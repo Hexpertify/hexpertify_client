@@ -65,7 +65,7 @@ function Footer() {
             </Link>
           </div>
 
-          <span className="text-sm text-gray-500 dark:text-gray-400">
+          <span className="text-sm">
             © {new Date().getFullYear()} <span className="hover:underline">Hexpertify</span>. All Rights Reserved.
           </span>
         </div>
