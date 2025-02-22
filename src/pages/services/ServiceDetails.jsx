@@ -5,6 +5,8 @@ import Spinner from "../../components/Spinner";
 import BackButton from "../../components/Button/BackButton";
 import Pagination from "../../components/Pagination";
 import { useState } from "react";
+import MarkdownViewer from "../../components/MarkdownViewer";
+
 
 function ServiceDetails() {
   const { id } = useParams();
@@ -30,10 +32,6 @@ function ServiceDetails() {
   return (
     <>
       <div className="relative mt-5 px-4">
-      <title >{data?.[0]?.title}</title>
-      <meta name="description" content={data?.[0]?.metaDescription} />
-      <meta name="keywords" content={data?.[0]?.metaTags?.join(",")} />
-
         <BackButton />
         <div className="relative mb-6 mt-4">
           <div className="absolute inset-0 flex items-center justify-center rounded-3xl bg-black bg-opacity-50 p-4 text-center">
@@ -72,6 +70,9 @@ function ServiceDetails() {
           </div>
         )}
       </div>
+<div className="px-2 py-4">
+  <MarkdownViewer content={data?.[0]?.screenDescription} />
+</div>
     </>
   );
 }
