@@ -53,7 +53,7 @@ export const router = createBrowserRouter([
         element: <ServiceDetails />,
       },
       {
-        path: "services/:id/consultant/:consultantId",
+        path: "services/:serviceName/:id/consultant/:consultantId",
         element: <Consultant />,
       },
       {
