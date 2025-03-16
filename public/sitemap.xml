@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+
 <url>
 <loc>https://hexpertify.com/</loc>
 <lastmod>2025-02-23T05:59:00+00:00</lastmod>
@@ -26,11 +26,11 @@
 <lastmod>2025-02-23T05:59:00+00:00</lastmod>
 </url>
 <url>
-<loc>https://hexpertify.com/services/financial-&-investment-advisor/66e6f5813f32e37825fb98f8</loc>
+<loc>https://hexpertify.com/services/financial-&amp;-investment-advisor/66e6f5813f32e37825fb98f8</loc>
 <lastmod>2025-02-23T05:59:00+00:00</lastmod>
 </url>
 <url>
-<loc>https://hexpertify.com/services/fitness-&-nutrition-coach/66e6f68c3bb20bdc9c51f984</loc>
+<loc>https://hexpertify.com/services/fitness-&amp;-nutrition-coach/66e6f68c3bb20bdc9c51f984</loc>
 <lastmod>2025-02-23T05:59:00+00:00</lastmod>
 </url>
 <url>
@@ -42,7 +42,7 @@
 <lastmod>2025-02-23T05:59:00+00:00</lastmod>
 </url>
 <url>
-<loc>https://hexpertify.com/services/campus-&-corporate-webinars/67a0dc9f133acb3735f0deff</loc>
+<loc>https://hexpertify.com/services/campus-&amp;-corporate-webinars/67a0dc9f133acb3735f0deff</loc>
 <lastmod>2025-02-23T05:59:00+00:00</lastmod>
 </url>
 </urlset>
