@@ -1,48 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-<url>
-<loc>https://hexpertify.com/</loc>
-<lastmod>2025-02-23T05:59:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://hexpertify.com/services</loc>
-<lastmod>2025-02-23T05:59:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://hexpertify.com/about-us</loc>
-<lastmod>2025-02-23T05:59:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://hexpertify.com/services/doctors/66d842e4210a8bd3caa83c5e</loc>
-<lastmod>2025-02-23T05:59:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://hexpertify.com/services/mental-health-counsellor/66e67d54936952f23fab26d4</loc>
-<lastmod>2025-02-23T05:59:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://hexpertify.com/services/business-consultant/66e6e007cdee3f2d7167d386</loc>
-<lastmod>2025-02-23T05:59:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://hexpertify.com/services/financial-&amp;-investment-advisor/66e6f5813f32e37825fb98f8</loc>
-<lastmod>2025-02-23T05:59:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://hexpertify.com/services/fitness-&amp;-nutrition-coach/66e6f68c3bb20bdc9c51f984</loc>
-<lastmod>2025-02-23T05:59:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://hexpertify.com/services/career-counsellor/66e71273cae73ed7df8af694</loc>
-<lastmod>2025-02-23T05:59:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://hexpertify.com/services/fashion-consultant/66f2dbb22fd5f67abc36522d</loc>
-<lastmod>2025-02-23T05:59:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://hexpertify.com/services/campus-&amp;-corporate-webinars/67a0dc9f133acb3735f0deff</loc>
-<lastmod>2025-02-23T05:59:00+00:00</lastmod>
-</url>
+  <url>
+    <loc>https://hexpertify.com/</loc>
+    <lastmod>2025-02-23T05:59:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hexpertify.com/services/</loc>
+    <lastmod>2025-02-23T05:59:00+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hexpertify.com/about-us/</loc>
+    <lastmod>2025-02-23T05:59:00+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hexpertify.com/services/doctors/66d842e4210a8bd3caa83c5e</loc>
+    <lastmod>2025-02-23T05:59:00+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hexpertify.com/services/mental-health-counsellor/66e67d54936952f23fab26d4</loc>
+    <lastmod>2025-02-23T05:59:00+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hexpertify.com/services/business-consultant/66e607cdee3f2d7167d386</loc>
+    <lastmod>2025-02-23T05:59:00+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hexpertify.com/services/financial-&amp;-investment-advisor/66e6f5813f32e37825fb98f8</loc>
+    <lastmod>2025-02-23T05:59:00+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hexpertify.com/services/fitness-&amp;-nutrition-coach/66e6f68c3bb20bdc9c51f984</loc>
+    <lastmod>2025-02-23T05:59:00+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hexpertify.com/services/career-counsellor/66e71273ce73ed7df8af694</loc>
+    <lastmod>2025-02-23T05:59:00+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hexpertify.com/services/fashion-consultant/66f2db2fd5f67abc36522d</loc>
+    <lastmod>2025-02-23T05:59:00+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hexpertify.com/services/campus-&amp;-corporate-webinars/67a0dc9f133acb3735f0deff</loc>
+    <lastmod>2025-02-23T05:59:00+00:00</lastmod>
+  </url>
+
 </urlset>
