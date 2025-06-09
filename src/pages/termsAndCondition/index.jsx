@@ -1,7 +1,14 @@
+import { Helmet } from 'react-helmet';
 
 const TermsAndCondition = () => {
   return (
     <div className="container mx-auto mb-4 min-h-[calc(100vh-15rem)] px-4 py-8 text-primary-text">
+       <Helmet>
+            <meta charSet="utf-8" />
+            <title>Hexpertify-T&C</title>    
+            <meta name="description" content="terms and services that needed to be accepted in ordfer to use our services" />
+            <meta name="keywords" content="Online Consulting, Hexpertify, Consulting, Booking, terms and conditions" />
+      </Helmet>
       <h1 className="text-primary border-primary !mt-4 mb-4 border-b-2 pb-2 text-3xl font-extrabold">
         Terms and Conditions
       </h1>

@@ -1,6 +1,17 @@
+import { Helmet } from 'react-helmet';
 function AboutUs() {
   return (
     <div className="container mx-auto mb-4 min-h-[calc(100vh-15rem)] px-4 py-8 text-primary-text">
+      <Helmet>
+            <meta charSet="utf-8" />
+            <title>About Hexpertify</title>    
+            <meta name="description" content=" Hexpertify is a online Consultation platform where people can Consult
+        with Certified and Experienced Professionals across a wide range of
+        fields ranging from Healthcare to Fashion. In the world full of
+        misinformation Hexpertify serves people by making the process of finding
+        a Verified and Certified Professionals online." />
+        <meta name="keywords" content="Online Consulting, Hexpertify, Consulting, About Hexpertify" />
+      </Helmet>
       <h1 className="text-primary border-primary !mt-4 mb-4 border-b-2 pb-2 text-3xl font-extrabold">
         About Us
       </h1>
