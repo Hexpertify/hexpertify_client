@@ -19,11 +19,11 @@ function AboutUs() {
         Welcome to HEXPERTIFY, your trusted Online consulting Partner.
       </h2>
       <p className="mb-4 text-base leading-relaxed lg:text-lg">
-        Hexpertify is a online Consultation platform where people can Consult
-        with Certified and Experienced Professionals across a wide range of
-        fields ranging from Healthcare to Fashion. In the world full of
-        misinformation Hexpertify serves people by making the process of finding
-        a Verified and Certified Professionals online.
+        Hexpertify is an online Consulting platform where people can Consult
+        with CERTIFIED Consultants across a wide range of
+        fields ranging from Healthcare to Fashion. 
+        In the world full of misinformation Hexpertify serves people by making the process of finding
+        a Verified and Certified Expert online.
       </p>
 
       <div className="mb-6 text-primary-text">
@@ -33,7 +33,7 @@ function AboutUs() {
         <p className="text-base leading-relaxed lg:text-lg">
           Hexpertify is on a Mission to destroy Misinformation , ensuring the
           world never struggles to find certified Professionals across any
-          Sector.Also we wage War against the deception of Astrology, ensuring
+          Sector.Also Hexpertify wages War against the deception of Astrology, ensuring
           that knowledge, not luck, shapes your future.
         </p>
       </div>
