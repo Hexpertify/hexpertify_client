@@ -16,7 +16,7 @@ function AboutUs() {
         About Us
       </h1>
       <h2 className="mb-4 text-2xl font-semibold text-primary-text lg:text-3xl">
-        Welcome to HEXPERTIFY, your trusted partner in consultancy services.
+        Welcome to HEXPERTIFY, your trusted Online consulting Partner.
       </h2>
       <p className="mb-4 text-base leading-relaxed lg:text-lg">
         Hexpertify is a online Consultation platform where people can Consult
