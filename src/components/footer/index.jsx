@@ -14,11 +14,12 @@ function Footer() {
 
           <div className="flex items-center space-x-3 mb-6 sm:mb-0">
             <img src="/hexpertify.PNG" className="h-8 rounded-full shadow-md" alt="Hexpertify" />
-            <span className="text-2xl font-semibold">Hexpertify</span>
+            <span className="text-2xl font-semibold">HEXPERTIFY</span>
           </div>
           <div className="flex space-x-6 mb-4 sm:mb-0">
             <a
               href="https://www.instagram.com/hexpertify?igsh=MmowZ3VxdDkxdDkz"
+              aria-label="Follow Hexpertify on Instagram"
               target="_blank"
               rel="noopener noreferrer"
               className="transition-colors duration-300"
@@ -27,6 +28,7 @@ function Footer() {
             </a>
             <a
               href="https://x.com/hexpertifyapp?s=11"
+              aria-label="Follow Hexpertify on X"
               target="_blank"
               rel="noopener noreferrer"
               className=" transition-colors duration-300"
@@ -35,6 +37,7 @@ function Footer() {
             </a>
             <a
               href="https://www.linkedin.com/company/hexpertify/"
+              aria-label="Follow Hexpertify on LinkedIn"
               target="_blank"
               rel="noopener noreferrer"
               className="transition-colors duration-300"
@@ -46,7 +49,7 @@ function Footer() {
 
           {/* Right Side - Services */}
           <div className="flex flex-col mb-6 sm:mb-0">
-            <h6 className="font-semibold text-lg mb-3">Services</h6>
+            <p className="font-semibold text-lg mb-3">Services</p>
             {services.map((service, index) => (
               <Link to={links[index]} key={index} className="text-sm mb-2">{service}</Link>
             ))}
