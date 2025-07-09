@@ -71,9 +71,9 @@ const AppBar = () => {
     <nav className="sticky top-0 z-50 flex w-full items-center justify-between bg-white/20 p-4 text-primary-text shadow-lg backdrop-blur-md md:justify-center">
       <div className="flex-initial items-center justify-center md:flex-[0.5]">
         <Link to="/">
-          <h1 className="text-2xl font-bold text-primary-text transition-transform duration-300 hover:scale-105">
+          <div className="text-2xl font-bold text-primary-text transition-transform duration-300 hover:scale-105">
             {sidebarTitle}
-          </h1>
+          </div>
         </Link>
       </div>
       <ul className="hidden list-none flex-row items-center justify-between text-primary-text md:flex">
