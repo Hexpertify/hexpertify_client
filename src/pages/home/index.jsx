@@ -5,12 +5,6 @@ import { Helmet } from 'react-helmet';
 function Home() {
   return (
     <div className="mx-auto mt-8 flex w-full flex-col justify-center px-4">
-      <Helmet>
-            <meta charSet="utf-8" />
-            <title>Hexpertify-Consult CERTIFIED Experts Online</title>    
-            <meta name="description" content="Hexpertify consulting Platform" />
-            <meta name="keywords" content="Online Consulting, Hexpertify, Consulting, About Hexpertify" />
-      </Helmet>
       <BannerCard />
       <div className="sm:px-2">
         <h1 className="sr-only">
