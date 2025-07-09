@@ -14,9 +14,8 @@ function Home() {
       <BannerCard />
       <div className="sm:px-2">
         <h1 className="py-4 text-start font-Alata text-2xl font-normal sm:text-center sm:text-5xl">
-          Consult Certified Experts from Doctors to Fashion advisors | Hexpertify
+          Featured Services
         </h1>
-        <h2 className="mt-6 text-xl font-semibold sm:text-3xl">Featured Services</h2>
         <ServicesContainer />
       </div>
     </div>
