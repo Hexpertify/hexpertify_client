@@ -11,9 +11,12 @@ function Services() {
             <meta name="description" content="Featured services to consult experts from various fields" />
             <meta name="keywords" content="Hexpertify, Consulting, Book appointment, Doctor Consultation , Lawyer , Fitness Coach, Business consultant" />
       </Helmet>
-      <h1 className="py-4 text-start font-Alata text-2xl font-normal sm:text-center sm:text-5xl">
-        Featured Services
+      <h1 className="sr-only">
+       Available Services on Hexpertify
       </h1>
+      <h2 className="py-4 text-start font-Alata text-2xl font-normal sm:text-center sm:text-5xl">
+        Featured Services
+      </h2>
 
       <ServicesContainer />
     </div>
