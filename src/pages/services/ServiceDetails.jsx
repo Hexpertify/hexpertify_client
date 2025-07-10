@@ -45,9 +45,9 @@ function ServiceDetails() {
             className="aspect-video h-48 w-full rounded-3xl object-cover shadow-lg sm:h-64"
           />
         </div>
-        <h1 className="py-4 text-start font-Alata text-2xl font-normal sm:text-center sm:text-5xl">
+        <h2 className="py-4 text-start font-Alata text-2xl font-normal sm:text-center sm:text-5xl">
           Featured Consultants
-        </h1>
+        </h2>
 
         {data?.[0]?.consultants?.length === 0 && (
           <p className="flex h-36 items-center justify-center text-center font-Alata text-2xl font-normal">
