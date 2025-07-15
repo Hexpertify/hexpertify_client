@@ -1,8 +1,3 @@
-User-Agent:* 
-Disallow:
-
-Allow:/
+User-Agent: *
+Allow: /
 Sitemap: https://hexpertify.com/sitemap.xml
-
-
-
