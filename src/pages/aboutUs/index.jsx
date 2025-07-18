@@ -11,6 +11,7 @@ function AboutUs() {
         misinformation Hexpertify serves people by making the process of finding
         a Verified and Certified Expert online." />
         <meta name="keywords" content="Online Consulting, Hexpertify, Consulting, About Hexpertify" />
+        <link rel="canonical" href="https://hexpertify.com/about-us" />
       </Helmet>
       <h1 className="text-primary border-primary !mt-4 mb-4 border-b-2 pb-2 text-3xl font-extrabold">
         About Us
