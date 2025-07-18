@@ -8,6 +8,7 @@ function Services() {
        <Helmet>
             <meta charSet="utf-8" />
             <title>Hexpertify-Services</title>    
+            <link rel="canonical" href="https://hexpertify.com/services" />
             <meta name="description" content="Featured services to consult experts from various fields" />
             <meta name="keywords" content="Hexpertify, Consulting, Book appointment, Doctor Consultation , Lawyer , Fitness Coach, Business consultant" />
       </Helmet>
