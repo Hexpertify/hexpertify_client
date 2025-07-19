@@ -4,32 +4,6 @@
       "source": "/services/marketingconsultations",
       "destination": "/services/business-consultant/66e6e007cdee3f2d7167d386",
       "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.hexpertify.com"
-        }
-      ],
-      "destination": "https://hexpertify.com/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "hexpertify.com"
-        },
-        {
-          "type": "protocol",
-          "value": "http"
-        }
-      ],
-      "destination": "https://hexpertify.com/:path*",
-      "permanent": true
     }
   ],
   "rewrites": [
