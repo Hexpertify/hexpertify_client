@@ -6,15 +6,29 @@
       "permanent": true
     },
     {
-      "source": "/(.*)",
-      "has": [{ "type": "host", "value": "www.hexpertify.com" }],
-      "destination": "https://hexpertify.com/:1",
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.hexpertify.com"
+        }
+      ],
+      "destination": "https://hexpertify.com/:path*",
       "permanent": true
     },
     {
-      "source": "/(.*)",
-      "has": [{ "type": "host", "value": "hexpertify.com" }],
-      "destination": "https://hexpertify.com/:1",
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "hexpertify.com"
+        },
+        {
+          "type": "protocol",
+          "value": "http"
+        }
+      ],
+      "destination": "https://hexpertify.com/:path*",
       "permanent": true
     }
   ],
