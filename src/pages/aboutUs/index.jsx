@@ -7,9 +7,7 @@ function AboutUs() {
             <title>About Hexpertify</title>    
             <meta name="description" content=" Hexpertify is an online Consulting platform where people can Consult
         with CERTIFIED Consultants across a wide range of
-        fields ranging from Healthcare to Fashion. In the world full of
-        misinformation Hexpertify serves people by making the process of finding
-        a Verified and Certified Expert online." />
+        fields ranging from Healthcare to Fashion." />
         <meta name="keywords" content="Online Consulting, Hexpertify, Consulting, About Hexpertify" />
         <link rel="canonical" href="https://hexpertify.com/about-us" />
       </Helmet>
