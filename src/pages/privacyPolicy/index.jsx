@@ -54,7 +54,7 @@ const PrivacyAndRefundPolicy = () => {
         <div className="mb-6 text-primary-text">
           <h2 className="mb-2 text-xl font-semibold text-primary-text">Eligibility:</h2>
           <p className="text-base leading-relaxed lg:text-lg">
-            Refunds are applicable only when there is a problem from our side. Consultation cancelled in last minute are not eligible.
+            Refunds are applicable only when a scheduled consultation is cancelled before 4 hours . Consultation cancelled in last minute are not eligible.
           </p>
         </div>
   
